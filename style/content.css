@@ -1,0 +1,177 @@
+/* ==========================================================================
+Root
+========================================================================== */
+:root {
+    --clr_cream: hsl(35, 100%, 95%);
+    --clr_dark_1: hsl(50, 6%, 20%);
+    --clr_dark_2: hsl(48, 5%, 15%);
+    --clr_yellow: hsl(39, 100%, 75%);
+    --clr_red: hsl(6, 71%, 59%);
+    --clr_blue: hsl(190, 25%, 54%);
+
+    --ff_system: system-ui, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    --ff_retro: "VT323-Regular";
+
+    --fs_regular:     1.35rem;
+    --fs_subheading:  2.00rem;
+    --fs_heading:     5.00rem;
+}
+/* ==========================================================================
+HTML Elements
+========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    color: var(--clr_dark_2);
+    background-color: var(--clr_cream);
+    font-family: var(--ff_system);
+    text-rendering: optimizeSpeed;
+    line-height: 1.6;  
+    font-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+main {
+    padding-top: 1.25rem;
+}
+p, td {
+    text-align: justify;
+    hyphens: auto;
+}
+article {
+    width: min(65ch, 100% - 2rem);
+    font-size: var(--fs_regular);
+    background-color: var(--clr_cream);
+    margin-inline: auto;
+
+    border-width: 4px;
+    border-color: var(--clr_dark_2);
+    border-style: solid;
+    border-radius: 12px;
+
+    box-shadow: 10px 10px 0px 0px var(--clr_dark_2);
+
+    padding: 2rem;
+}
+article > :where(:not(:first-child)) {
+    margin-top: 1.25rem;
+}
+table {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+th {
+    text-align: left;
+    vertical-align: top;
+    width: 30%;
+}
+th, td {
+    padding-top: 1.25rem;
+}
+td {
+    width: 70%;
+}
+td > :where(:not(:first-child)) {
+    margin-top: 1.25rem;
+}
+h1, h2 {
+    color: var(--clr_dark_1);
+    font-weight: bold;
+    line-height: 1;
+}
+h1 {
+    font-size: var(--fs_heading);
+    font-family: var(--ff_retro);
+    text-wrap: balance;
+    hyphens: auto;
+    padding-top: 0.5rem;
+}
+h2 {
+    font-size: var(--fs_subheading);
+    padding-top: 0.5rem;
+}
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+footer {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: var(--clr_dark_1);
+    width: 100%;
+}
+/* ==========================================================================
+Component Classes
+========================================================================== */
+.btn {
+    display: block;
+    padding: 0.75em 0.5em;
+    margin-top: 1.5rem;
+    max-width: 200px;
+    border-radius: 6px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 24px;
+    cursor: pointer;
+    border: none;
+    background-color: var(--clr_btn);
+    color: var(--clr_dark_1);
+    font-family: var(--ff_retro);
+    font-weight: bold;
+    margin-inline: auto;
+    text-transform: uppercase;
+}
+.btn:hover {
+    background-color: var(--clr_dark_1);
+    color: var(--clr_btn);
+    font-weight: bold;
+}
+.texture {
+    position: fixed;
+    background-repeat: repeat;
+    background-image: url('../images/noise.png');
+    mix-blend-mode: normal;
+    pointer-events: none;
+    height: 100%; 
+    width: 100%;
+}
+.top_home_link {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    width: 25%;
+    min-width: 100px;
+}
+/* ==========================================================================
+Animation, Media Queries, & Fonts
+========================================================================== */
+@font-face {
+    font-family: "VT323-Regular";
+    src: url("../fonts/VT323-Regular.ttf") format('truetype');
+}
+@media (max-width: 825px) {
+    article {
+        padding: 0;
+        border: none;
+        box-shadow: none;
+    }
+    body {
+        background-image: none;
+    }
+    p, td {
+        text-align: left;
+    }
+    th, td {
+        display: block;
+    }
+}
+/* ==========================================================================
+Utility Classes
+========================================================================== */
+.blob--yellow {background-image: url(../images/blob_yellow.svg);}
+.blob--red {background-image: url(../images/blob_red.svg);}
+.blob--blue {background-image: url(../images/blob_blue.svg);}
+.center {margin-inline: auto;}

@@ -1,0 +1,235 @@
+/* ==========================================================================
+Root
+========================================================================== */
+:root {
+
+    --clr_cream: hsl(34, 100%, 95%);
+    --clr_dark_1: hsl(50, 6%, 20%);
+    --clr_dark_2: hsl(48, 5%, 15%);
+    --clr_yellow: hsl(39, 100%, 75%);
+    --clr_red: hsl(6, 71%, 59%);
+    --clr_blue: hsl(190, 25%, 54%);
+
+    --ff_system: system-ui, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    --ff_retro: "VT323-Regular";
+    
+    --fs_100: 1rem;
+    --fs_150: 1.5rem;
+    --fs_200: 2rem;
+    --fs_300: 3rem;
+    --fs_400: 4rem;
+    --fs_500: 5rem;
+    --fs_750: 7.5rem;
+
+    --b_size: 2.5rem;
+    --b_width: 5rem;
+}
+/* ==========================================================================
+HTML Elements
+========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+    box-sizing: border-box; 
+}
+body {
+    font-size: 100%;
+    line-height: 1.5;
+    text-rendering: optimizeSpeed;
+}
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+p {
+    margin-top: 1.25rem;
+}
+footer {
+    height: 500px;
+    background-color: var(--clr_dark_1);
+}
+/* ==========================================================================
+Component Classes
+========================================================================== */
+.bracket_container {
+    position: relative;
+    border: var(--b_size) solid var(--clr_dark_1);
+    border-top: none;
+    border-bottom: none;
+    margin: 2rem 2.5rem;
+    padding: 2.5rem;
+    font-size: var(--fs_100);
+}
+.bracket_corners_left::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-top: var(--b_size) solid var(--clr_dark_1);
+    width: var(--b_width);
+}
+.bracket_corners_left::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top: var(--b_size) solid var(--clr_dark_1);
+    width: var(--b_width);
+}
+.bracket_corners_right::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-top: var(--b_size) solid var(--clr_dark_1);
+    width: var(--b_width);
+}
+.bracket_corners_right::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-top: var(--b_size) solid var(--clr_dark_1);
+    width: var(--b_width);    
+}
+.btn {
+    display: block;
+    padding: 0.75em 0.5em;
+    margin-top: 1.5rem;
+    max-width: 200px;
+    border-radius: 6px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 24px;
+    cursor: pointer;
+    border: none;
+    background-color: var(--clr_btn);
+    color: var(--clr_dark_1);
+    font-family: var(--ff_retro);
+    font-weight: bold;
+    margin-inline: auto;
+    text-transform: uppercase;
+}
+.btn:hover {
+    background-color: var(--clr_dark_1);
+    color: var(--clr_btn);
+    font-weight: bold;
+}
+.category_header {
+    margin-inline: auto;
+    line-height: 1;
+    color: var(--clr_dark_2);
+    font-family: var(--ff_retro);
+    font-size: var(--fs_300);
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+.category_text {
+    font-family: var(--ff_system);
+    font-size: var(--fs_150);
+    color: var(--clr_dark_2);
+    text-align: justify;
+    hyphens: auto;
+}
+.collection_header {
+    margin-inline: auto;
+    margin-bottom: 5rem;
+    margin-top: 22rem;
+    line-height: 1.6;
+    color: var(--clr_cream);
+    background-color: var(--clr_dark_1);
+    font-family: var(--ff_retro);
+    font-size: var(--fs_750);
+    text-transform: uppercase;
+    text-align: center;
+}
+.flex_container {
+    --min: 500px;
+    --gap: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gap);
+    padding: 2.5rem 0;
+}
+.flex_container > * {
+    flex: 1 1 var(--min);
+    display: inline-block;
+}
+.header {
+    padding: 2.5rem;
+}
+.header_title {
+    font-family: var(--ff_retro);
+    font-size: var(--fs_750);
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--clr_dark_1);
+    line-height: 0.8;
+    margin-top: 2.5rem;
+    margin-inline: auto;
+    text-align: center;
+}
+.texture {
+    position: fixed;
+    background-repeat: repeat;
+    background-image: url('../images/noise.png');
+    mix-blend-mode: normal;
+    pointer-events: none;
+    height: 100%; 
+    width: 100%;
+}
+/* ==========================================================================
+Animation, Media Queries, & Fonts
+========================================================================== */
+@keyframes typing {
+    from {width: 0}
+}
+@keyframes blink {
+    50% {border-color: transparent}
+}
+@font-face {
+    font-family: "VT323-Regular";
+    src: url("../fonts/VT323-Regular.ttf") format('truetype');
+}
+@media (max-width: 1375px) {
+    .container {flex-direction: column;}
+    .flex_container img {order: 1;}
+    .flex_container article {order: 2;}
+}
+@media (max-width: 500px) {
+    .header_title {font-size: var(--fs_500);}
+    .collection_header {font-size: var(--fs_400);}
+    .bracket_corners_left::after {display: none;}
+    .bracket_corners_left::before {display: none;}
+    .bracket_corners_right::after {display: none;}
+    .bracket_corners_right::before {display: none;}
+    .bracket_container  { 
+        border: none;
+        margin: 0; 
+    }
+}
+@media (min-width: 1300px) {
+    .header_title {
+        /* Typewriter Effect */
+        overflow: hidden;
+        border-right: .05em solid var(--clr_dark_1);
+        white-space: nowrap;
+        width: 25ch;
+        animation: typing 2.5s steps(20), 
+        blink .75s step-end infinite alternate;
+    }
+}
+/* ==========================================================================
+Utility Classes
+========================================================================== */
+.bg_cream {background-color: var(--clr_cream);}
+.bg_yellow {background-color: var(--clr_yellow);}
+.bg_red {background-color: var(--clr_red);}
+.bg_blue {background-color: var(--clr_blue);}
+.btn--yellow {--clr_btn: var(--clr_yellow);}
+.btn--red {--clr_btn: var(--clr_red);}
+.btn--blue {--clr_btn: var(--clr_blue);}
+.center {margin-inline: auto;}
