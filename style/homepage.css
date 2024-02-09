@@ -47,8 +47,11 @@ p {
     margin-top: 1.25rem;
 }
 footer {
-    height: 500px;
-    background-color: var(--clr_dark_1);
+    height: 1000px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: url(../images/powerhouse_building.png);
 }
 /* ==========================================================================
 Component Classes
@@ -147,7 +150,7 @@ Component Classes
     text-align: center;
 }
 .flex_container {
-    --min: 500px;
+    --min: 800px;
     --gap: 1rem;
     display: flex;
     flex-wrap: wrap;
@@ -194,22 +197,21 @@ Animation, Media Queries, & Fonts
     font-family: "VT323-Regular";
     src: url("../fonts/VT323-Regular.ttf") format('truetype');
 }
-@media (max-width: 1375px) {
+@media (max-width: 1878px) {
     .container {flex-direction: column;}
     .flex_container img {order: 1;}
     .flex_container article {order: 2;}
 }
 @media (max-width: 500px) {
+    .texture {display: none;}
     .header_title {font-size: var(--fs_500);}
     .collection_header {font-size: var(--fs_400);}
     .bracket_corners_left::after {display: none;}
     .bracket_corners_left::before {display: none;}
     .bracket_corners_right::after {display: none;}
     .bracket_corners_right::before {display: none;}
-    .bracket_container  { 
-        border: none;
-        margin: 0; 
-    }
+    .bracket_container{border: none; margin: 0;}
+    footer {height: 200px; background-color: var(--clr_dark_1); background-image: unset;}
 }
 @media (min-width: 1300px) {
     .header_title {

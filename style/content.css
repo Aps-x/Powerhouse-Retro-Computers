@@ -32,31 +32,30 @@ body {
     font-size: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-size: cover;
 }
 main {
     padding-top: 1.25rem;
-}
-p, td {
-    text-align: justify;
-    hyphens: auto;
+    margin-bottom: 5rem;
 }
 article {
     width: min(65ch, 100% - 2rem);
     font-size: var(--fs_regular);
     background-color: var(--clr_cream);
     margin-inline: auto;
-
     border-width: 4px;
     border-color: var(--clr_dark_2);
     border-style: solid;
     border-radius: 12px;
-
     box-shadow: 10px 10px 0px 0px var(--clr_dark_2);
-
     padding: 2rem;
 }
 article > :where(:not(:first-child)) {
     margin-top: 1.25rem;
+}
+p {
+    text-align: justify;
+    hyphens: auto;
 }
 table {
     width: 100%;
@@ -66,12 +65,13 @@ th {
     text-align: left;
     vertical-align: top;
     width: 30%;
-}
-th, td {
     padding-top: 1.25rem;
 }
 td {
     width: 70%;
+    text-align: justify;
+    hyphens: auto;
+    padding-top: 1.25rem;
 }
 td > :where(:not(:first-child)) {
     margin-top: 1.25rem;
@@ -153,20 +153,11 @@ Animation, Media Queries, & Fonts
     src: url("../fonts/VT323-Regular.ttf") format('truetype');
 }
 @media (max-width: 825px) {
-    article {
-        padding: 0;
-        border: none;
-        box-shadow: none;
-    }
-    body {
-        background-image: none;
-    }
-    p, td {
-        text-align: left;
-    }
-    th, td {
-        display: block;
-    }
+    article {padding: 0; border: none; box-shadow: none;}
+    body {background-image: none;}
+    p, td {text-align: left;}
+    th, td {display: block;}
+    .texture {display: none;}
 }
 /* ==========================================================================
 Utility Classes
