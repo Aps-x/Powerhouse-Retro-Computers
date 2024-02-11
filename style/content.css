@@ -2,12 +2,12 @@
 Root
 ========================================================================== */
 :root {
-    --clr_cream: hsl(35, 100%, 95%);
+    --clr_cream:  hsl(35, 100%, 95%);
     --clr_dark_1: hsl(50, 6%, 20%);
     --clr_dark_2: hsl(48, 5%, 15%);
     --clr_yellow: hsl(39, 100%, 75%);
-    --clr_red: hsl(6, 71%, 59%);
-    --clr_blue: hsl(190, 25%, 54%);
+    --clr_red:    hsl(6, 71%, 59%);
+    --clr_blue:   hsl(190, 25%, 54%);
 
     --ff_system: system-ui, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
     --ff_retro: "VT323-Regular";

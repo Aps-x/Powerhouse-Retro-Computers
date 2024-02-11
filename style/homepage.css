@@ -2,13 +2,12 @@
 Root
 ========================================================================== */
 :root {
-
-    --clr_cream: hsl(34, 100%, 95%);
+    --clr_cream:  hsl(34, 100%, 95%);
     --clr_dark_1: hsl(50, 6%, 20%);
     --clr_dark_2: hsl(48, 5%, 15%);
     --clr_yellow: hsl(39, 100%, 75%);
-    --clr_red: hsl(6, 71%, 59%);
-    --clr_blue: hsl(190, 25%, 54%);
+    --clr_red:    hsl(6, 71%, 59%);
+    --clr_blue:   hsl(190, 25%, 54%);
 
     --ff_system: system-ui, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
     --ff_retro: "VT323-Regular";
@@ -45,13 +44,6 @@ img {
 }
 p {
     margin-top: 1.25rem;
-}
-footer {
-    height: 1000px;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-image: url(../images/powerhouse_building.png);
 }
 /* ==========================================================================
 Component Classes
@@ -178,7 +170,7 @@ Component Classes
 .texture {
     position: fixed;
     background-repeat: repeat;
-    background-image: url('../images/noise.png');
+    background-image: url(../images/noise.png);
     mix-blend-mode: normal;
     pointer-events: none;
     height: 100%; 
@@ -211,7 +203,6 @@ Animation, Media Queries, & Fonts
     .bracket_corners_right::after {display: none;}
     .bracket_corners_right::before {display: none;}
     .bracket_container{border: none; margin: 0;}
-    footer {height: 200px; background-color: var(--clr_dark_1); background-image: unset;}
 }
 @media (min-width: 1300px) {
     .header_title {
