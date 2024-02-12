@@ -10,7 +10,7 @@ Root
     --clr_blue:   hsl(190, 25%, 54%);
 
     --ff_system: system-ui, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-    --ff_retro: "VT323-Regular";
+    --ff_retro: "VT323";
 
     --fs_regular:     1.35rem;
     --fs_subheading:  2.00rem;
@@ -132,7 +132,7 @@ Component Classes
 .texture {
     position: fixed;
     background-repeat: repeat;
-    background-image: url('../images/noise.png');
+    background-image: url("../images/noise.png");
     mix-blend-mode: normal;
     pointer-events: none;
     height: 100%; 
@@ -149,8 +149,8 @@ Component Classes
 Animation, Media Queries, & Fonts
 ========================================================================== */
 @font-face {
-    font-family: "VT323-Regular";
-    src: url("../fonts/VT323-Regular.ttf") format('truetype');
+    font-family: "VT323";
+    src: url("../fonts/VT323-Regular.ttf") format("truetype");
 }
 @media (max-width: 825px) {
     article {padding: 0; border: none; box-shadow: none;}
@@ -162,7 +162,7 @@ Animation, Media Queries, & Fonts
 /* ==========================================================================
 Utility Classes
 ========================================================================== */
-.blob--yellow {background-image: url(../images/blob_yellow.svg);}
-.blob--red {background-image: url(../images/blob_red.svg);}
-.blob--blue {background-image: url(../images/blob_blue.svg);}
+.blob--yellow {background-image: url("../images/blob_yellow.svg");}
+.blob--red {background-image: url("../images/blob_red.svg");}
+.blob--blue {background-image: url("../images/blob_blue.svg");}
 .center {margin-inline: auto;}
