@@ -194,7 +194,7 @@ Animation, Media Queries, & Fonts
     .flex_container img {order: 1;}
     .flex_container article {order: 2;}
 }
-@media (max-width: 500px) {
+@media (max-width: 560px) {
     .texture {display: none;}
     .header_title {font-size: var(--fs_500);}
     .collection_header {font-size: var(--fs_400);}
