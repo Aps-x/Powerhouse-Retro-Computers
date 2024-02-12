@@ -36,6 +36,7 @@ body {
     font-size: 100%;
     line-height: 1.5;
     text-rendering: optimizeSpeed;
+    width: 100%;
 }
 img {
     max-width: 100%;
@@ -196,13 +197,14 @@ Animation, Media Queries, & Fonts
 }
 @media (max-width: 560px) {
     .texture {display: none;}
-    .header_title {font-size: var(--fs_500);}
-    .collection_header {font-size: var(--fs_400);}
+    .header_title {font-size: var(--fs_300);}
+    .collection_header {font-size: var(--fs_300);}
     .bracket_corners_left::after {display: none;}
     .bracket_corners_left::before {display: none;}
     .bracket_corners_right::after {display: none;}
     .bracket_corners_right::before {display: none;}
-    .bracket_container{border: none; margin: 0;}
+    .bracket_container {border: none; margin: 0;}
+    .category_text {text-align: left;}
 }
 @media (min-width: 1300px) {
     .header_title {
