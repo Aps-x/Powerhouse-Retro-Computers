@@ -19,6 +19,8 @@ Root
     --fs_400: 4rem;
     --fs_500: 5rem;
     --fs_750: 7.5rem;
+    
+    --fs_big: clamp(3rem, 12vw + 1rem, 7.5rem);
 
     --b_size: 2.5rem;
     --b_width: 5rem;
@@ -138,7 +140,7 @@ Component Classes
     color: var(--clr_cream);
     background-color: var(--clr_dark_1);
     font-family: var(--ff_retro);
-    font-size: var(--fs_750);
+    font-size: var(--fs_big);
     text-transform: uppercase;
     text-align: center;
 }
@@ -159,7 +161,7 @@ Component Classes
 }
 .header_title {
     font-family: var(--ff_retro);
-    font-size: var(--fs_750);
+    font-size: var(--fs_big);
     font-weight: bold;
     text-transform: uppercase;
     color: var(--clr_dark_1);
@@ -197,8 +199,6 @@ Animation, Media Queries, & Fonts
 }
 @media (max-width: 560px) {
     .texture {display: none;}
-    .header_title {font-size: var(--fs_300);}
-    .collection_header {font-size: var(--fs_300);}
     .bracket_corners_left::after {display: none;}
     .bracket_corners_left::before {display: none;}
     .bracket_corners_right::after {display: none;}
