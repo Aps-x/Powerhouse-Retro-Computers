@@ -41,7 +41,7 @@ body {
     width: 100%;
 }
 img {
-    max-width: 100%;
+    width: 100%;
     display: block;
     height: auto;
 }
@@ -212,7 +212,7 @@ Animation, Media Queries, & Fonts
         overflow: hidden;
         border-right: .05em solid var(--clr_dark_1);
         white-space: nowrap;
-        width: 25ch;
+        width: 10.5em;
         animation: typing 2.5s steps(20), 
         blink .75s step-end infinite alternate;
     }
