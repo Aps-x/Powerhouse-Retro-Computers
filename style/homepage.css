@@ -89,6 +89,7 @@ Component Classes
     background-color: var(--clr_dark_1);
     text-transform: uppercase;
     text-align: center;
+    font-display: swap;
 }
 .brackets_container {
     margin-top: 3rem;
