@@ -9,7 +9,7 @@ Root
     --clr_red:    hsl(6, 71%, 59%);
     --clr_blue:   hsl(190, 25%, 54%);
 
-    --ff_system: system-ui, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    --ff_main: system-ui, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
     --ff_retro: "VT323";
 
     --fs_regular:     1.35rem;
@@ -26,9 +26,10 @@ HTML Elements
 body {
     color: var(--clr_dark_2);
     background-color: var(--clr_cream);
-    font-family: var(--ff_system);
+    font-family: var(--ff_main);
     text-rendering: optimizeSpeed;
-    line-height: 1.6;  
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.4;  
     font-size: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -98,37 +99,16 @@ img {
     height: auto;
 }
 footer {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-block: 5rem;
     background-color: var(--clr_dark_1);
     width: 100%;
+}
+footer img {
+    width: calc(100% - 2rem);
 }
 /* ==========================================================================
 Component Classes
 ========================================================================== */
-.btn {
-    display: block;
-    padding: 0.75em 0.5em;
-    margin-top: 1.5rem;
-    max-width: 200px;
-    border-radius: 6px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 24px;
-    cursor: pointer;
-    border: none;
-    background-color: var(--clr_btn);
-    color: var(--clr_dark_1);
-    font-family: var(--ff_retro);
-    font-weight: bold;
-    margin-inline: auto;
-    text-transform: uppercase;
-}
-.btn:hover {
-    background-color: var(--clr_dark_1);
-    color: var(--clr_btn);
-    font-weight: bold;
-}
 .texture {
     position: fixed;
     background-repeat: repeat;
@@ -139,11 +119,7 @@ Component Classes
     width: 100%;
 }
 .top_home_link {
-    position: absolute;
-    top: 25px;
-    left: 25px;
-    width: 25%;
-    min-width: 100px;
+    display: none;
 }
 /* ==========================================================================
 Animation, Media Queries, & Fonts
@@ -152,14 +128,28 @@ Animation, Media Queries, & Fonts
     font-family: "VT323";
     src: url("../fonts/VT323-Regular.ttf") format("truetype");
 }
+@media (min-width: 1790px) {
+    .top_home_link {
+        display: block;
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        width: 25vw;
+    }
+}
 @media (max-width: 825px) {
-    article {padding: 0; border: none; box-shadow: none;}
+    article {
+        padding: 0; border: none; box-shadow: none;
+    }
+    p, td {
+        text-align: left;
+    }
+    th, td {
+        display: block;
+    }
     body.blob--yellow {background-image: none;}
     body.blob--red {background-image: none;}
     body.blob--blue {background-image: none;}
-    p, td {text-align: left;}
-    th, td {display: block;}
-    .texture {display: none;}
 }
 /* ==========================================================================
 Utility Classes
