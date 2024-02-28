@@ -152,6 +152,9 @@ Animation, Media Queries, & Fonts
     from {
         width: 0
     }
+    to {
+        width: 10.5em;
+    }
 }
 @keyframes blink {
     50% {
@@ -208,9 +211,10 @@ Animation, Media Queries, & Fonts
         overflow: hidden;
         border-right: 0.1ch solid var(--clr_dark_1);
         white-space: nowrap;
-        width: 24.5ch;
-        animation: typing 2.5s steps(20), 
+        width: 0;
+        animation: typing 2.5s steps(20) forwards,
         blink .75s step-end infinite alternate;
+        animation-delay: 0.25s;
     }
     .main__title {
         margin-top: 21rem;
