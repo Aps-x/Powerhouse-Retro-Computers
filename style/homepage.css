@@ -72,7 +72,7 @@ Component Classes
 }
 .header__title {
     margin-top: 4rem;
-    font-family: var(--ff_retro);
+    font-family: var(--ff_retro), var(--ff_main);
     font-size: var(--fs_large);
     color: var(--clr_dark_1);
     text-transform: uppercase;
@@ -89,7 +89,6 @@ Component Classes
     background-color: var(--clr_dark_1);
     text-transform: uppercase;
     text-align: center;
-    font-display: swap;
 }
 .brackets_container {
     margin-top: 3rem;
