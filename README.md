@@ -26,8 +26,8 @@ The item sections were wrapped in brackets to reflect the influence of computer 
 \
 \
 The content pages drew heavily from one specific inspiration: Gustavo Zambelli’s ‘Macindows’ art. The footer ties the website back to the Powerhouse museum.
-Low-Fidelity Prototypes
-
+## Low-Fidelity Prototypes
+[<img src="/rationale_images/Primary_Prototype">]
 
 
 ## Changes From Low-Fidelity Prototypes:
