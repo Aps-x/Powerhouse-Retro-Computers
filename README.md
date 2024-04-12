@@ -83,7 +83,10 @@ Background blob svg’s generated with: [Haikei](https://app.haikei.app/)
 Terminal font from: [Google Fonts](https://fonts.google.com/specimen/VT323)
 \
 Typewriter CSS combined from both: [Marko Denic](https://markodenic.com/css-tips/) && [CSS Tricks](https://css-tricks.com/snippets/css/typewriter-effect/)
-
+\
+\
+\
+\
 **Learning Material:**
 \
 \
