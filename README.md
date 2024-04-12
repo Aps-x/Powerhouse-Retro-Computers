@@ -26,8 +26,15 @@ The item sections were wrapped in brackets to reflect the influence of computer 
 \
 \
 The content pages drew heavily from one specific inspiration: Gustavo Zambelli’s ‘Macindows’ art. The footer ties the website back to the Powerhouse museum.
+
+
+
 ## Low-Fidelity Prototypes
-![](/rationale_images/Primary_Prototype)
+![Primary_Prototype](https://github.com/Aps-x/Powerhouse-Retro-Computers/assets/113870480/84f63091-b6d4-4423-ad7b-6fb7408c43d7)
+
+![Secondary_Prototype](https://github.com/Aps-x/Powerhouse-Retro-Computers/assets/113870480/6a0020c7-1858-45e9-bd01-bb80ada0749c)
+
+
 
 
 ## Changes From Low-Fidelity Prototypes:
@@ -37,36 +44,15 @@ At first, I wanted to have a hero image (The PC with yellow band) right up at th
 For the item sections, I originally wanted to have a fieldset around each section that I made thicker with css. However, this resulted in a border that was either too thick or too thin and I didn’t think it would look good with color. I changed the design to brackets and moved the titles inside the sections. This allowed me to color the section headers independently of the border and, because the brackets didn’t wrap all the way around, it was far less intrusive / oppressive looking.
 
 As for the content pages, I drew heavily from Gustavo Zambelli’s art.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+\
+\
 **Final Design for Comparison:**
 
+![Header](https://github.com/Aps-x/Powerhouse-Retro-Computers/assets/113870480/a6ce4afd-27bf-414b-9486-eede358547f3)
 
+![Home_Content](https://github.com/Aps-x/Powerhouse-Retro-Computers/assets/113870480/d02e8292-6020-475f-ae71-ed77c918c2de)
+
+![Content_Page](https://github.com/Aps-x/Powerhouse-Retro-Computers/assets/113870480/a3929bad-0379-4baf-8cb4-dd65f21820be)
 
 
 ## Resources
