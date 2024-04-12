@@ -72,7 +72,6 @@ Typewriter CSS combined from both: [Marko Denic](https://markodenic.com/css-tips
 \
 \
 \
-\
 **Learning Material:**
 \
 \
