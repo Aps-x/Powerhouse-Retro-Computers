@@ -1,4 +1,6 @@
 # Website Rationale
+Website Link: https://aps-x.github.io/Powerhouse-Retro-Computers/index.html
+
 ## Rationale / Reflection
 **Style / Theme / Aesthetic:**
 \
