@@ -27,6 +27,16 @@ The item sections were wrapped in brackets to reflect the influence of computer 
 \
 The content pages drew heavily from one specific inspiration: Gustavo Zambelli’s ‘Macindows’ art. The footer ties the website back to the Powerhouse museum.
 
+**IxD Principles:**
+\
+\
+This website design is fairly simple as to not interfere with the user’s main goal of reading about the items in the collection. The following IxD principles were adhered to:
+
+Clarity and Simplicity: The design was kept clean and simple to keep a clear focus on the content of the website and to simplify the user experience by removing clutter and distractions. There is also a clear visual hierarchy that makes it easy for a user to move through the website and find the information that they are looking for.
+
+Consistency: The design is kept consistent throughout the homepage, and each content page is consistent with each other.
+
+Convention and Familiarity: The design does not change or subvert website design conventions that users are familiar with.
 
 
 ## Low-Fidelity Prototypes
@@ -37,8 +47,9 @@ The content pages drew heavily from one specific inspiration: Gustavo Zambelli�
 
 
 
-## Changes From Low-Fidelity Prototypes:
-
+**Changes From Low-Fidelity Prototypes:**
+\
+\
 At first, I wanted to have a hero image (The PC with yellow band) right up at the top of the website. However, I found that this was too much detail fighting for the user’s attention upfront. I decided to just have the Powerhouse logo text and the special feature of the typewriter effect text which resulted in a much cleaner visual hierarchy.
 
 For the item sections, I originally wanted to have a fieldset around each section that I made thicker with css. However, this resulted in a border that was either too thick or too thin and I didn’t think it would look good with color. I changed the design to brackets and moved the titles inside the sections. This allowed me to color the section headers independently of the border and, because the brackets didn’t wrap all the way around, it was far less intrusive / oppressive looking.
